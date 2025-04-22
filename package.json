@@ -1,0 +1,16 @@
+{
+  "name": "with_selenium",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "^11.1.0",
+    "selenium-webdriver": "^4.31.0"
+  }
+}
