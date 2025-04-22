@@ -39,7 +39,6 @@ describe('Selenium WebDriver Test', function() {
             
             let title = await driver.getTitle();
             
-            
             assert.equal(
                 title, 
                 'Sistema de Gestión Hospitalaria - SIGEH',
