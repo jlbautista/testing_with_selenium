@@ -34,7 +34,7 @@ describe('Selenium WebDriver Test', function() {
             
             await driver.get(process.env.URL + 'login');
             
-            // Esperar de forma más robusta a que la página cargue
+            // Wait for the page to load
             await driver.wait(until.titleContains('Sistema de Gestión Hospitalaria'), 20000);
             
             let title = await driver.getTitle();
@@ -56,7 +56,7 @@ describe('Selenium WebDriver Test', function() {
             
             await driver.get(process.env.URL + 'login');
             
-            // Esperar a que los elementos estén presentes y visibles
+            // Wait until the elements are loaded
             await driver.wait(until.elementLocated(By.id('email')), 20000);
             await driver.wait(until.elementIsVisible(await driver.findElement(By.id('email'))), 15000);
             await driver.wait(until.elementIsVisible(await driver.findElement(By.id('password'))), 15000);
